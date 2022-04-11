@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		569A77392802382C00C48D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 569A77382802382C00C48D3E /* GoogleService-Info.plist */; };
+		564726E92804B5BF00BF8B6C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726E82804B5BF00BF8B6C /* ListViewController.swift */; };
+		564726EB2804B5D000BF8B6C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726EA2804B5D000BF8B6C /* DetailsViewController.swift */; };
+		564726F02804CC6700BF8B6C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726EF2804CC6700BF8B6C /* EntryViewController.swift */; };
 		569B136727FCB5C100BF8047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136627FCB5C100BF8047 /* AppDelegate.swift */; };
 		569B136927FCB5C100BF8047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136827FCB5C100BF8047 /* SceneDelegate.swift */; };
-		569B136B27FCB5C100BF8047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136A27FCB5C100BF8047 /* ViewController.swift */; };
+		569B136B27FCB5C100BF8047 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136A27FCB5C100BF8047 /* LoginViewController.swift */; };
 		569B136E27FCB5C100BF8047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B136C27FCB5C100BF8047 /* Main.storyboard */; };
 		569B137027FCB5C300BF8047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 569B136F27FCB5C300BF8047 /* Assets.xcassets */; };
 		569B137327FCB5C300BF8047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B137127FCB5C300BF8047 /* LaunchScreen.storyboard */; };
 		569B137E27FCB5C300BF8047 /* TripOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B137D27FCB5C300BF8047 /* TripOrganizerTests.swift */; };
 		569B138827FCB5C300BF8047 /* TripOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B138727FCB5C300BF8047 /* TripOrganizerUITests.swift */; };
 		569B138A27FCB5C300BF8047 /* TripOrganizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B138927FCB5C300BF8047 /* TripOrganizerUITestsLaunchTests.swift */; };
+		569CF9B1280472C6004C0A39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 569CF9B0280472C6004C0A39 /* GoogleService-Info.plist */; };
 		90CF1C02DCC37BFA9F37339D /* Pods_TripOrganizer_TripOrganizerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16F6D02B776A534B218524 /* Pods_TripOrganizer_TripOrganizerUITests.framework */; };
 		BEE849EFE260CBA951CA7560 /* Pods_TripOrganizerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DEFF36ECAA3D7FD5BD6925 /* Pods_TripOrganizerTests.framework */; };
 		ECEBB089F21A8E4DED946C65 /* Pods_TripOrganizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB5EFA4E86F6A8794B23940 /* Pods_TripOrganizer.framework */; };
@@ -43,11 +46,13 @@
 		0FB5EFA4E86F6A8794B23940 /* Pods_TripOrganizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripOrganizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2FE885EC989CBF888E964E /* Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig"; path = "Target Support Files/Pods-TripOrganizer-TripOrganizerUITests/Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24DEFF36ECAA3D7FD5BD6925 /* Pods_TripOrganizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripOrganizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		569A77382802382C00C48D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		564726E82804B5BF00BF8B6C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		564726EA2804B5D000BF8B6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		564726EF2804CC6700BF8B6C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		569B136327FCB5C100BF8047 /* TripOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569B136627FCB5C100BF8047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		569B136827FCB5C100BF8047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		569B136A27FCB5C100BF8047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		569B136A27FCB5C100BF8047 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		569B136D27FCB5C100BF8047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		569B136F27FCB5C300BF8047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		569B137227FCB5C300BF8047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 		569B138327FCB5C300BF8047 /* TripOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		569B138727FCB5C300BF8047 /* TripOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripOrganizerUITests.swift; sourceTree = "<group>"; };
 		569B138927FCB5C300BF8047 /* TripOrganizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripOrganizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		569CF9B0280472C6004C0A39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6233B4964F85BEB9C0F24093 /* Pods-TripOrganizer-TripOrganizerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripOrganizer-TripOrganizerUITests.debug.xcconfig"; path = "Target Support Files/Pods-TripOrganizer-TripOrganizerUITests/Pods-TripOrganizer-TripOrganizerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		742A98AA5E2DF8B20B40189B /* Pods-TripOrganizerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripOrganizerTests.debug.xcconfig"; path = "Target Support Files/Pods-TripOrganizerTests/Pods-TripOrganizerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		805A4EF106F54ED6F8A2DB2B /* Pods-TripOrganizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripOrganizer.release.xcconfig"; path = "Target Support Files/Pods-TripOrganizer/Pods-TripOrganizer.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +112,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		564726EC2804B5D600BF8B6C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				564726E82804B5BF00BF8B6C /* ListViewController.swift */,
+				564726EA2804B5D000BF8B6C /* DetailsViewController.swift */,
+				569B136A27FCB5C100BF8047 /* LoginViewController.swift */,
+				564726EF2804CC6700BF8B6C /* EntryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		569B135A27FCB5C100BF8047 = {
 			isa = PBXGroup;
 			children = (
@@ -131,10 +148,10 @@
 		569B136527FCB5C100BF8047 /* TripOrganizer */ = {
 			isa = PBXGroup;
 			children = (
-				569A77382802382C00C48D3E /* GoogleService-Info.plist */,
+				564726EC2804B5D600BF8B6C /* ViewController */,
+				569CF9B0280472C6004C0A39 /* GoogleService-Info.plist */,
 				569B136627FCB5C100BF8047 /* AppDelegate.swift */,
 				569B136827FCB5C100BF8047 /* SceneDelegate.swift */,
-				569B136A27FCB5C100BF8047 /* ViewController.swift */,
 				569B136C27FCB5C100BF8047 /* Main.storyboard */,
 				569B136F27FCB5C300BF8047 /* Assets.xcassets */,
 				569B137127FCB5C300BF8047 /* LaunchScreen.storyboard */,
@@ -280,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				569B137327FCB5C300BF8047 /* LaunchScreen.storyboard in Resources */,
-				569A77392802382C00C48D3E /* GoogleService-Info.plist in Resources */,
+				569CF9B1280472C6004C0A39 /* GoogleService-Info.plist in Resources */,
 				569B137027FCB5C300BF8047 /* Assets.xcassets in Resources */,
 				569B136E27FCB5C100BF8047 /* Main.storyboard in Resources */,
 			);
@@ -410,9 +427,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				569B136B27FCB5C100BF8047 /* ViewController.swift in Sources */,
+				569B136B27FCB5C100BF8047 /* LoginViewController.swift in Sources */,
 				569B136727FCB5C100BF8047 /* AppDelegate.swift in Sources */,
+				564726E92804B5BF00BF8B6C /* ListViewController.swift in Sources */,
 				569B136927FCB5C100BF8047 /* SceneDelegate.swift in Sources */,
+				564726EB2804B5D000BF8B6C /* DetailsViewController.swift in Sources */,
+				564726F02804CC6700BF8B6C /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

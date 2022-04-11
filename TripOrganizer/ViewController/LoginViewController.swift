@@ -9,11 +9,10 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     let signInConfig = GIDConfiguration.init(clientID: "140455681498-6vufk8o3mbctk5n2rcaf970oacmv29du.apps.googleusercontent.com")
@@ -21,6 +20,7 @@ class ViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
             guard error == nil else { return }
+            self.performSegue(withIdentifier: "goToList", sender: nil)
         }
     }
     

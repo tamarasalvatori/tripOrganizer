@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>140455681498-6vufk8o3mbctk5n2rcaf970oacmv29du.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.140455681498-6vufk8o3mbctk5n2rcaf970oacmv29du</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBzWFXCS1Y5iKMZSId6_N03TKvtmtqiZ7k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140455681498</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.salvatori.TripOrganizer</string>
+	<key>PROJECT_ID</key>
+	<string>flightorganizer</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flightorganizer.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140455681498:ios:bcfa9b9b8aaa051c5a34e3</string>
+</dict>
+</plist>
