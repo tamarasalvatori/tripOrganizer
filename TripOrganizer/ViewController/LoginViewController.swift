@@ -22,6 +22,17 @@ class LoginViewController: UIViewController {
             guard error == nil else { return }
             self.performSegue(withIdentifier: "goToList", sender: nil)
         }
+        
+        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
+            guard error == nil else { return }
+            guard let user = user else { return }
+
+            let emailAddress = user.profile?.email
+
+            let fullName = user.profile?.name
+            let givenName = user.profile?.givenName
+            let familyName = user.profile?.familyName
+        }
     }
     
 //    @IBAction func signOut(sender: Any) {

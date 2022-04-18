@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		564726E92804B5BF00BF8B6C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726E82804B5BF00BF8B6C /* ListViewController.swift */; };
-		564726EB2804B5D000BF8B6C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726EA2804B5D000BF8B6C /* DetailsViewController.swift */; };
-		564726F02804CC6700BF8B6C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564726EF2804CC6700BF8B6C /* EntryViewController.swift */; };
 		569B136727FCB5C100BF8047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136627FCB5C100BF8047 /* AppDelegate.swift */; };
 		569B136927FCB5C100BF8047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136827FCB5C100BF8047 /* SceneDelegate.swift */; };
 		569B136B27FCB5C100BF8047 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B136A27FCB5C100BF8047 /* LoginViewController.swift */; };
@@ -47,8 +45,6 @@
 		1A2FE885EC989CBF888E964E /* Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig"; path = "Target Support Files/Pods-TripOrganizer-TripOrganizerUITests/Pods-TripOrganizer-TripOrganizerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24DEFF36ECAA3D7FD5BD6925 /* Pods_TripOrganizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripOrganizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		564726E82804B5BF00BF8B6C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		564726EA2804B5D000BF8B6C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		564726EF2804CC6700BF8B6C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		569B136327FCB5C100BF8047 /* TripOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569B136627FCB5C100BF8047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		569B136827FCB5C100BF8047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,9 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				564726E82804B5BF00BF8B6C /* ListViewController.swift */,
-				564726EA2804B5D000BF8B6C /* DetailsViewController.swift */,
 				569B136A27FCB5C100BF8047 /* LoginViewController.swift */,
-				564726EF2804CC6700BF8B6C /* EntryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -431,8 +425,6 @@
 				569B136727FCB5C100BF8047 /* AppDelegate.swift in Sources */,
 				564726E92804B5BF00BF8B6C /* ListViewController.swift in Sources */,
 				569B136927FCB5C100BF8047 /* SceneDelegate.swift in Sources */,
-				564726EB2804B5D000BF8B6C /* DetailsViewController.swift in Sources */,
-				564726F02804CC6700BF8B6C /* EntryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,6 @@
+framework module Pods_TripOrganizer {
+  umbrella header "Pods-TripOrganizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

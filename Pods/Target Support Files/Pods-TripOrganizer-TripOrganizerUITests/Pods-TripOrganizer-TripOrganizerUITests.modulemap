@@ -1,0 +1,6 @@
+framework module Pods_TripOrganizer_TripOrganizerUITests {
+  umbrella header "Pods-TripOrganizer-TripOrganizerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
