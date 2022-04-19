@@ -19,24 +19,14 @@ class LoginViewController: UIViewController {
 
     @IBAction func signIn(_ sender: Any) {
         GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
-            guard error == nil else { return }
-            self.performSegue(withIdentifier: "goToList", sender: nil)
-        }
-        
-        GIDSignIn.sharedInstance.signIn(with: signInConfig, presenting: self) { user, error in
-            guard error == nil else { return }
-            guard let user = user else { return }
-
-            let emailAddress = user.profile?.email
-
-            let fullName = user.profile?.name
-            let givenName = user.profile?.givenName
-            let familyName = user.profile?.familyName
+            if let e = error {
+                print(e.localizedDescription)
+            } else {
+                let givenName = user?.profile?.givenName
+                self.performSegue(withIdentifier: "goToList", sender: nil)
+                let listVC = ListViewController()
+                listVC.name = givenName ?? ""
+            }
         }
     }
-    
-//    @IBAction func signOut(sender: Any) {
-//      GIDSignIn.sharedInstance.signOut()
-//    }
-
 }

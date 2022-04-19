@@ -10,11 +10,12 @@ class ListViewController: UIViewController, UITableViewDataSource {
     }()
     
     var trips = [String]()
+    var name = "Nome"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.trips = UserDefaults.standard.stringArray(forKey: "trips") ?? []
-        title = "Trip Organizer"
+        title = "Trip Organizer de \(name)"
         view.addSubview(table)
         table.dataSource = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(
