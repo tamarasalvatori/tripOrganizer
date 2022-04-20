@@ -15,6 +15,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToList" {
+            if let destinationVC = segue.destination as? ListViewController {
+                let givenName = sender as? String
+                destinationVC.name = givenName ?? ""
+            }
+        }
+    }
+    
     let signInConfig = GIDConfiguration.init(clientID: "140455681498-6vufk8o3mbctk5n2rcaf970oacmv29du.apps.googleusercontent.com")
 
     @IBAction func signIn(_ sender: Any) {
@@ -22,10 +31,7 @@ class LoginViewController: UIViewController {
             if let e = error {
                 print(e.localizedDescription)
             } else {
-                let givenName = user?.profile?.givenName
-                self.performSegue(withIdentifier: "goToList", sender: nil)
-                let listVC = ListViewController()
-                listVC.name = givenName ?? ""
+                self.performSegue(withIdentifier: "goToList", sender: user?.profile?.givenName)
             }
         }
     }
