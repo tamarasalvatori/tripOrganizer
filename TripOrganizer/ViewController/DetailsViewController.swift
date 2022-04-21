@@ -1,6 +1,10 @@
 
 import UIKit
 
+protocol DetailsDelegate: AnyObject {
+    func update(_ details: [String], from place: Trip)
+}
+
 class DetailsViewController: UIViewController {
 
     private let table: UITableView = {
@@ -9,14 +13,19 @@ class DetailsViewController: UIViewController {
         return table
     }()
     
-    var details = [String]()
-    var place : String = ""
+    var details: [String] = []
+
+    var place : Trip?
+
+    weak var delegate: DetailsDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.details = UserDefaults.standard.stringArray(forKey: "details") ?? []
-                    
-        title = "Roteiro \(place)"
+        self.details = place?.details ?? []
+
+        if let placeName = place?.name {
+            title = "Roteiro \(placeName)"
+        }
         view.addSubview(table)
         table.dataSource = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(
@@ -35,10 +44,12 @@ class DetailsViewController: UIViewController {
             if let field = alert.textFields?.first {
                 if let text = field.text, !text.isEmpty {
                     DispatchQueue.main.async {
-                        var currentDetails = UserDefaults.standard.stringArray(forKey: "details") ?? []
-                        currentDetails.append(text)
-                        UserDefaults.standard.setValue(currentDetails, forKey: "details")
                         self?.details.append(text)
+
+                        if let details = self?.details, let place = self?.place {
+                            self?.delegate?.update(details, from: place)
+                        }
+
                         self?.table.reloadData()
                     }
                 }
