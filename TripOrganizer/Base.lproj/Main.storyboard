@@ -58,6 +58,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="M66-bg-Fa5"/>
+                    <connections>
+                        <segue destination="jlf-oS-Ck7" kind="show" identifier="goToDetails" id="awY-Df-tss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bkX-rL-UnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,6 +83,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POL-4V-7IC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="51.5625"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="d9y-wF-2Ae">
+            <objects>
+                <viewController id="jlf-oS-Ck7" customClass="DetailsViewController" customModule="TripOrganizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fqO-Sz-N7T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="COr-GU-NfJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PSW-Ee-IY2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhX-e0-tbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3601" y="52"/>
         </scene>
     </scenes>
     <resources>

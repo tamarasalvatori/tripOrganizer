@@ -1,16 +1,18 @@
 
 import UIKit
 
-class ListViewController: UIViewController, UITableViewDataSource {
+class ListViewController: UIViewController {
 
     private let table: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
+
     
     var trips = [String]()
     var name : String?
+    var tripSelected : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         title = "Trip Organizer de \(givenName)"
         view.addSubview(table)
         table.dataSource = self
+        table.delegate = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .add,
             target: self,
@@ -53,16 +56,30 @@ class ListViewController: UIViewController, UITableViewDataSource {
         super.viewDidLayoutSubviews()
         table.frame = view.bounds
     }
- 
+}
+    extension ListViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = self.trips[indexPath.item]
+        tripSelected = item
+        self.performSegue(withIdentifier: "goToDetails", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return trips.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell",
-                                              for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = trips[indexPath.row]
         return cell
     }
-    
+ 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDetails" {
+            let vc = segue.destination as? DetailsViewController
+            vc?.place = tripSelected
+        }
+    }
 }
